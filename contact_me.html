@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Contact Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="ContactMe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Full background video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <header>
+      <div id="menu_humberger" onclick="menu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav id="nav_hide">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="skill.html">SKILL</a>
+      <a href="testimonial.html">TESTIMONIALS</a>
+    </nav>
+    <button class="contact-btn" style="background-color: #00ffae; color:black;">CONTACT ME</button>
+  </header>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+     <form action="https://formsubmit.co/jenmaracantilado.alano@gmail.com" method="POST" class="contact-form">
+      <!-- Replace your@email.com with your real email -->
+
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <!-- Optional: Redirect to thank you page after submit -->
+      <input type="hidden" name="_next" value="https://jm-alano.github.io/JM_Portfolio/index.html" >
+
+      <!-- Optional: Disable captcha -->
+      <input type="hidden" name="_captcha" value="true" />
+      <!-- Optional: Redirect to thank you page after submit -->
+      <input type="hidden" name="_next" value="https://jm-alano.github.io/JM_Portfolio/thankyou.html" />
+
+      <!-- Optional: Custom subject -->
+      <input type="hidden" name="_subject" value="New message from your website!" />
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+   <section class="socials">
+  <div class="social-links">
+        <a href="https://github.com/JM-Alano" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+         <a href="https://www.instagram.com/jenmar.alano.0411/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/im_Em00/" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+</section>
+<script>
+    function menu() {
+      const nav = document.getElementById("nav_hide");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

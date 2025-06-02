@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | About Page</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Full background video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <header>
+ 
+      <div id="menu_humberger" onclick="menu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+    <nav  id="nav_hide">
+      <a href="index.html">HOME</a>
+      <a href="#" class="active">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="skill.html">SKILL</a>
+      <a href="testimonial.html">TESTIMONIALS</a>
+    </nav>
+    <a href="contact_me.html"><button class="contact-btn">CONTACT ME</button></a>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <div class="about-img">
+        <img src="images/494688391_1091422753037252_2889127033965952580_n.jpg" alt="JM Alano">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Greetings, I'm <strong>Jm Alano</strong>, a Filipino web developer. I received a degree in information technology from Cavite State University Trece Martires Campus. My area of expertise is creating aesthetically pleasing and incredibly functional systems and websites. I create fluid, responsive, and user-friendly digital experiences with tools like HTML, CSS, JavaScript, PHP, and MySQL.</p>
+        <p>I enjoy transforming concepts into useful and approachable solutions, whether it's for a commercial page, personal website, or custom system. The core principles of anything I make are accessibility, speed, and simplicity.</p>
+        <p>Let’s build something great together.</p>
+        <a href="CV.pdf"><button class="primary">Download CV</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="socials">
+    <div class="social-links">
+      <a href="https://github.com/JM-Alano" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/jenmar.alano.0411/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me/im_Em00/" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+  </section>
+
+
+  <!-- JavaScript -->
+  <script>
+    function menu() {
+  const nav = document.getElementById("nav_hide");
+  nav.classList.toggle("show");
+}
+
+  </script>
+</body>
+</html>

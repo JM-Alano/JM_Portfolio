@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Portfolio Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Full background video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <header>
+    <div id="menu_humberger" onclick="menu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav id="nav_hide">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="#" class="active">PORTFOLIO</a>
+      <a href="skill.html">SKILL</a>
+      <a href="testimonial.html">TESTIMONIALS</a>
+    </nav>
+    <a href="contact_me.html"><button class="contact-btn">CONTACT ME</button></a>
+  </header>
+
+  <section class="portfolio">
+    <h2 class="section-title">My Portfolio</h2>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <a href="http://brgypaliparan2portal.fwh.is/BIS/index.php" target="_blank" aria-label="Project 1">
+          <img src="images/Screenshot 2025-05-24 103218.png" alt="Project 1" />
+          <h3>Barangay Information System</h3>
+        </a>
+        <p> Designed and developed a web-based
+              system for Barangay Paliparan II to digitize
+              services and streamline resident
+              transactions using PHP, MySQL, HTML, CSS,
+              and JavaScript.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <a href="https://tmcshs.ct.ws/TMCSHS/School/index.php" target="_blank" aria-label="Project 2">
+          <img src="images/tmcshs.png" alt="Project 2" />
+          <h3>Attendance Monitoring System</h3>
+        </a>
+        <p> The attendance monitoring system is a
+          web-based application built with PHP, HTML,
+          CSS, and JavaScript. It is designed for senior
+          high schools to securely and efficiently track
+          student attendance.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <a href="https://sites.google.com/view/caviteprov-hrmdirectory/home" target="_blank" aria-label="Project 3">
+          <img src="images/directory.png" alt="Project 3" />
+          <h3>HRM Administrative Services site <br> Directory-Forms-Checklist</h3>
+        </a>
+        <p>The HRM Unit Directory Website is a digital
+            platform built with Google Sites, HTML, CSS,
+            and JavaScript to provide easy access to HR
+            services and personnel information for
+            DepEd Cavite.</p>
+      </div>
+
+
+    </div>
+
+    
+      
+
+      
+      
+
+    </div>
+  </section>
+
+  <section class="socials">
+    <div class="social-links">
+      <a href="https://github.com/JM-Alano" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/jenmar.alano.0411/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me/im_Em00/" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+  </section>
+
+    <!-- JavaScript -->
+  <script>
+    function menu() {
+      const nav = document.getElementById("nav_hide");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

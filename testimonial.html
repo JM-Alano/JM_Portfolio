@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Testimonial Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="testimonial.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <!-- Full background video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <header>
+      <div id="menu_humberger" onclick="menu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav id="nav_hide">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="skill.html">SKILL</a>
+      <a href="#" class="active">TESTIMONIALS</a>
+    </nav>
+<a href="contact_me.html"><button class="contact-btn">CONTACT ME</button></a>
+  </header>
+
+  <section class="testimonials">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="images/Dk.jpg" alt="Daniel Kyle Parreño" />
+        <h3>Daniel Kyle Parreño</h3>
+        <p>"JM made a clean and simple website for my school project, and it turned out way better than I expected. He really listened to what I needed, kept things easy to understand, and delivered it fast. Super happy with the result."</p>
+          <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     </div>
+    </div>
+      <div class="testimonial-card">
+        <img src="images/mitch.jpg" alt="Michelle Masicap" />
+        <h3>Michelle Masicap</h3>
+        <p>"He did a great job creating a Google Site for our HR Unit at the Department of Education. The site was clean, organized, and easy to navigate perfect for sharing information with our team."</p>
+         <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     
+  </div>
+    </div>
+      <div class="testimonial-card">
+        <img src="images/magtaas.jpg" alt="
+Lucila T. Anasco" />
+        <h3>Gilbert Magtaas</h3>
+     
+        <p>"I’m really impressed with the Barangay Information System developed for Barangay Paliparan 2. It made managing and tracking resident information much easier and faster. Great job!"</p>
+    <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+
+  </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="socials">
+  <div class="social-links">
+        <a href="https://github.com/JM-Alano" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+         <a href="https://www.instagram.com/jenmar.alano.0411/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/im_Em00/" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+</section>
+
+ <script>
+    function menu() {
+      const nav = document.getElementById("nav_hide");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

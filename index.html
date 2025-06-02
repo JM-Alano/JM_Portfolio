@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Home page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Background video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header -->
+ <header class="header">
+  <div id="menu_humberger" onclick="menu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav id="nav_hide">
+    <a href="#" class="active">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="skill.html">SKILL</a>
+    <a href="testimonial.html">TESTIMONIALS</a>
+  </nav>
+  <div class="contact-wrapper">
+    <a href="contact_me.html"><button class="contact-btn">CONTACT ME</button></a>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <p>HELLO</p>
+      <h1>I’m <span>Jm Alano</span><br />Web Developer</h1>
+      <p>
+        I'm a web developer from the Philippines with expertise in PHP, MySQL, JavaScript, HTML, and CSS. I build systems and websites that function well in addition to looking attractive.
+      </p>
+      <div class="buttons">
+        <button class="primary">CONTACT ME</button>
+        <a href="about.html"><button class="secondary">MORE INFO</button></a> 
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/received_2587997641397624-removebg-preview.png" alt="Graphic Designer" />
+    </div>
+  </section>
+
+  <!-- Social Links -->
+  <section class="socials">
+    <div class="social-links">
+      <a href="https://github.com/JM-Alano" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/jenmar.alano.0411/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/im_Em00/" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    function menu() {
+      const nav = document.getElementById("nav_hide");
+      nav.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
